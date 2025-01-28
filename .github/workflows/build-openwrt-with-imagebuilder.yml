@@ -23,7 +23,7 @@ on:
           - openwrt:23.05.3
           - immortalwrt:23.05.4
           - immortalwrt:23.05.3
-          - immortalwrt:23.05.2
+          - istoreos-master
       openwrt_board:
         description: "Select device board"
         required: false
