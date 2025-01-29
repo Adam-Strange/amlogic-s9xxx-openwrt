@@ -264,6 +264,12 @@ jobs:
           sudo timedatectl set-timezone "${TZ}"
           echo "status=success" >> ${GITHUB_OUTPUT}
 
+      # Add this step to install missing dependencies
+      - name: Install missing dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-dev libpcre2-dev
+
       - name: Create simulated physical disk
         run: |
           mnt_size=$(expr $(df -h /mnt | tail -1 | awk '{print $4}' | sed 's/[[:alpha:]]//g' | sed 's/\..*//') - 1)
