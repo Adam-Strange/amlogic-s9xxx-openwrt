@@ -297,7 +297,7 @@ jobs:
               REPO_BRANCH="master"
               TAGS_NAME="lede"
           elif [[ "${{ inputs.source_branch }}" == *"istoreos"* ]]; then
-              REPO_URL="https://github.com/istoreos/istoreos"
+              REPO_URL="https://github.com/Adam-Strange/istoreos"
               REPO_BRANCH="master"
               TAGS_NAME="istoreos"
           else
