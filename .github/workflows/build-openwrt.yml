@@ -17,7 +17,7 @@ on:
         options:
           - openwrt-main
           - lede-master
-          - istoreos-master
+          - istoreos-istoreos-23.05
       openwrt_board:
         description: "Select device board"
         required: false
